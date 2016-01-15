@@ -34,13 +34,9 @@
 		</property>
 	</bean>
 
-	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="hply.mapper" />
-	</bean>
-
 	<context:component-scan base-package="hply.core" />
 	<context:component-scan base-package="hply.mapper" />
-	<context:component-scan base-package="hply.service" />
+	<context:component-scan base-package="org.cqiyi.xinapp.service" />
 
 	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
 		<property name="securityManager" ref="securityManager" />
